@@ -1,0 +1,143 @@
+.me-free {
+    margin-right: 50px;
+  }
+  
+  .navLink2 {
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    font-weight: 550;
+  }
+  
+  .navList a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+  }
+  
+  .navbar-brand2 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.8vw;
+    text-decoration: none;
+  }
+  
+  .footerContent {
+    background-color: rgb(236, 236, 236);
+    height: auto;
+    padding-bottom: 20px;
+  }
+  
+  .fContent {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: clamp(0.7rem, 1.5vw, 2rem);
+  }
+  
+  .btCListBox {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btCList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btCList img {
+    width: clamp(2vw, 3vw, 4vw);
+    height: clamp(2vw, 3vw, 4vw);
+    border-radius: 25px;
+  }
+  
+  .btCList span {
+    margin: 0 10px 0 5px;
+    font-size: clamp(0.5rem, 1vw, 2vw);
+  }
+  
+  .btNav {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+  }
+  
+  .footerIf {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .footerIf img {
+    width: clamp(4rem, 9vw, 10rem);
+    height: auto;
+    padding: 10px;
+  }
+  
+  .region {
+    border-bottom: 0.5px solid rgb(189, 189, 189);
+    border-top: 0.5px solid rgb(189, 189, 189);
+    padding: 10px 0;
+  }
+  
+  .regionList {
+    font-size: clamp(0.75rem, 1.1vw, 1.5vw);
+    font-weight: bolder;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    white-space: none;
+    max-width: 90%;
+  }
+  
+  .test a:hover {
+    color: aquamarine;
+    font-weight: bolder;
+  }
+  
+  .nav-item a:hover {
+    color: rgb(102, 187, 159);
+  }
+  
+  .navbarButton {
+    margin-right: -30px;
+    padding: 0px;
+  }
+  
+  .btIfor {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(8px, 1vw, 5rem);
+  }
+  
+  .btIfor a {
+    text-decoration: none;
+    color: rgb(109, 106, 106);
+    padding: 2px 5px;
+  }
+  
+  .btIfor a:hover {
+    color: rgb(23, 50, 202);
+  }
+  
+  .firstBtIfor {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 1199px) {
+    .navList a {
+      font-size: 0.6rem;
+    }
+  
+    .navLink2 {
+      font-size: clamp(1rem, 1vw, 1.2rem);
+      font-weight: 550;
+    }
+  
+    .navbar-brand2 {
+      font-style: italic;
+      font-weight: bolder;
+      font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+    }
+  }
+  
