@@ -75,14 +75,65 @@ const navPlace = () => {
   });
 };
 
+let cardSection = document.querySelector(".card_section");
+
+let cards = [
+  {
+    img: "https://i.namu.wiki/i/S6A1BazT7gUkz7BD8p3LEop0p5cTCobCH62DcLfWjNq8SzOtFKVnol2Yc0x9wDK9XG_u29aYYDzkMb_uroeq3w.webp",
+    title: "롯데월드타워",
+    area: "서울특별시",
+    hashtags: ["전망대", "연인"],
+  },
+
+  {
+    img: "https://i.namu.wiki/i/KJ42M2qPSn4OB9mVo2WL2JerLzOiwTL9VaLkA_3CsaubW5pUA6wUlSK2UDeT3bI0cRsStV5r7a5sXq3Eo15czA.webp",
+    title: "석촌호수",
+    area: "서울특별시",
+    hashtags: ["데이트", "연인"],
+  },
+];
+
+const ddd = (i) => {
+  document.getElementById(`card_${i}`).classList.add("like");
+};
+
+const placeCard = () => {
+  cardSection.innerHTML = "";
+
+  cards.forEach((card, i) => {
+    cardSection.innerHTML += `
+    <div class="card">
+          <img
+            src="${card.img}"
+            alt=""
+          />
+          <button class="card_likes"  id="card_${i}" onclick="ddd(${i})">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+
+          <div class="card_text">
+            <div>
+              <h3>${card.title}</h3>
+              <p>${card.area}</p>
+            </div>
+          <div class="card_tags"> 
+          ${card.hashtags
+            .map((tag, i) => `<span>#${tag}</span>`)
+            .join("")}</div>
+          </div>
+        </div>
+    `;
+  });
+};
+
 const checkLocation = () => {
   regions.forEach((region, i) => {
     if (currentLocation.includes(region.link)) {
       document.getElementById(`item_${i}`).classList.add("active");
-      s;
     }
   });
 };
-navPlace();
 
+navPlace();
+placeCard();
 checkLocation();
