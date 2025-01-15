@@ -174,6 +174,7 @@
   font-weight: bolder;
   font-size: clamp(0.8rem, 1vw, 3rem);
 }
+
 .cardP p {
   margin: 0;
 }
@@ -186,6 +187,7 @@
   background-color: aliceblue;
   padding: 20px;
 }
+
 .backTitle {
   position: absolute;
   text-align: left;
@@ -268,12 +270,15 @@
   margin-left: 20px;
   width: 50%;
 }
-.midContentText >div{
+
+.midContentText>div {
   margin-top: 10px;
 }
-.midContentText a{
+
+.midContentText a {
   text-decoration: none;
 }
+
 .midContentText h4 {
   font-weight: bolder;
 }
@@ -295,11 +300,12 @@
   }
 }
 
-@media (max-width: 1000px){
-  .midContent img{
+@media (max-width: 1000px) {
+  .midContent img {
     display: none;
   }
-  .midContent div{
+
+  .midContent div {
     display: none;
   }
 }
@@ -308,6 +314,7 @@
   .smallImg {
     display: none;
   }
+
   .smallImg1,
   .smallImg2 {
     display: none;
@@ -318,6 +325,7 @@
   .bottomCentent {
     text-align: center;
   }
+
   .bottomCentent h4 {
     background-color: azure;
   }
