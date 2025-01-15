@@ -1,143 +1,324 @@
 .me-free {
-    margin-right: 50px;
+  margin-right: 50px;
+}
+
+.navLink2 {
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
+  font-weight: 550;
+}
+
+.navList a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.navbar-brand2 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.8vw;
+  text-decoration: none;
+}
+
+.footerContent {
+  background-color: rgb(236, 236, 236);
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.fContent {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: clamp(0.7rem, 1.5vw, 2rem);
+}
+
+.btCListBox {
+  display: flex;
+  justify-content: center;
+}
+
+.btCList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btCList img {
+  width: clamp(2vw, 3vw, 4vw);
+  height: clamp(2vw, 3vw, 4vw);
+  border-radius: 25px;
+}
+
+.btCList span {
+  margin: 0 10px 0 5px;
+  font-size: clamp(0.5rem, 1vw, 2vw);
+}
+
+.btNav {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.footerIf {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footerIf img {
+  width: clamp(4rem, 9vw, 10rem);
+  height: auto;
+  padding: 10px;
+}
+
+.region {
+  border-bottom: 0.5px solid rgb(189, 189, 189);
+  border-top: 0.5px solid rgb(189, 189, 189);
+  padding: 10px 0;
+}
+
+.regionList {
+  font-size: clamp(0.75rem, 1.1vw, 1.5vw);
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  white-space: none;
+  max-width: 90%;
+}
+
+.regionList a {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+}
+
+.test a:hover {
+  color: aquamarine;
+  font-weight: bolder;
+}
+
+.nav-item a:hover {
+  color: rgb(102, 187, 159);
+}
+
+.navbarButton {
+  margin-right: -30px;
+  padding: 0px;
+}
+
+.btIfor {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(8px, 1vw, 5rem);
+}
+
+.btIfor a {
+  text-decoration: none;
+  color: rgb(109, 106, 106);
+  padding: 2px 5px;
+}
+
+.btIfor a:hover {
+  color: rgb(23, 50, 202);
+}
+
+.firstBtIfor {
+  margin-bottom: 10px;
+}
+
+.main {
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+}
+
+.main img {
+  width: clamp(50%, 50%, 500px);
+  min-height: 20vh;
+  border-radius: 5px;
+}
+
+.back1 {
+  background-color: rgb(213, 242, 252);
+  padding: 10px;
+}
+
+.back2 {
+  background-color: rgb(240, 123, 27);
+  padding: 10px;
+}
+
+.back3 {
+  background-color: #5670ff;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border-style: none;
+}
+
+.cardImg {
+  width: clamp(7.5rem, 50vh, 90%);
+  max-height: 300px;
+}
+
+.cardP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: clamp(0.8rem, 1vw, 3rem);
+}
+.cardP p {
+  margin: 0;
+}
+
+.carouselBar {
+  margin: 0 0 10px 0;
+}
+
+.bottomCentent {
+  background-color: aliceblue;
+  padding: 20px;
+}
+.backTitle {
+  position: absolute;
+  text-align: left;
+  max-width: clamp(35%, 45%, 55%);
+  top: 20%;
+  left: 5%;
+  padding-right: 5px;
+  z-index: 1;
+}
+
+.backTitle div {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-bottom: 0.5rem;
+  background-color: black;
+  color: white;
+  display: inline;
+  padding: 0 5px;
+  border-radius: 0 15px 0px 15px;
+}
+
+.backTitle span {
+  font-size: clamp(0.8rem, 1.8vw, 2rem);
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.backTitle h6 {
+  font-size: clamp(0.5rem, 1vw, 1.2rem);
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.smallImg1,
+.smallImg2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 5vw;
+}
+
+.smallImg1 span {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5vw;
+  display: block;
+  width: clamp(30%, 35%, 40%);
+  margin-left: 10%;
+}
+
+.smallImg2 span {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.7vw;
+  display: block;
+  width: clamp(30%, 35%, 40%);
+  margin-left: 10%;
+}
+
+.midContent {
+  justify-content: center;
+  padding: 10px 10px;
+  max-height: 50vw;
+}
+
+.midContentImg {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.midContentImg img {
+  border-radius: 10px;
+  padding-left: 50px;
+  max-width: clamp(200px, 80%, 300%);
+}
+
+.midContentText {
+  flex-direction: column;
+  margin-left: 20px;
+  width: 50%;
+}
+.midContentText >div{
+  margin-top: 10px;
+}
+.midContentText a{
+  text-decoration: none;
+}
+.midContentText h4 {
+  font-weight: bolder;
+}
+
+@media (max-width: 1199px) {
+  .navList a {
+    font-size: 0.6rem;
   }
-  
+
   .navLink2 {
-    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    font-size: clamp(1rem, 1vw, 1.2rem);
     font-weight: 550;
   }
-  
-  .navList a {
-    text-decoration: none;
-    color: black;
-    font-size: 0.8rem;
-  }
-  
+
   .navbar-brand2 {
     font-style: italic;
     font-weight: bolder;
-    font-size: 1.8vw;
-    text-decoration: none;
+    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
   }
-  
-  .footerContent {
-    background-color: rgb(236, 236, 236);
-    height: auto;
-    padding-bottom: 20px;
+}
+
+@media (max-width: 1000px){
+  .midContent img{
+    display: none;
   }
-  
-  .fContent {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: clamp(0.7rem, 1.5vw, 2rem);
+  .midContent div{
+    display: none;
   }
-  
-  .btCListBox {
-    display: flex;
-    justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .smallImg {
+    display: none;
   }
-  
-  .btCList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .smallImg1,
+  .smallImg2 {
+    display: none;
   }
-  
-  .btCList img {
-    width: clamp(2vw, 3vw, 4vw);
-    height: clamp(2vw, 3vw, 4vw);
-    border-radius: 25px;
+}
+
+@media (max-width: 576px) {
+  .bottomCentent {
+    text-align: center;
   }
-  
-  .btCList span {
-    margin: 0 10px 0 5px;
-    font-size: clamp(0.5rem, 1vw, 2vw);
+  .bottomCentent h4 {
+    background-color: azure;
   }
-  
-  .btNav {
-    display: flex;
-    justify-content: center;
-    font-size: 0.7rem;
-  }
-  
-  .footerIf {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .footerIf img {
-    width: clamp(4rem, 9vw, 10rem);
-    height: auto;
-    padding: 10px;
-  }
-  
-  .region {
-    border-bottom: 0.5px solid rgb(189, 189, 189);
-    border-top: 0.5px solid rgb(189, 189, 189);
-    padding: 10px 0;
-  }
-  
-  .regionList {
-    font-size: clamp(0.75rem, 1.1vw, 1.5vw);
-    font-weight: bolder;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    white-space: none;
-    max-width: 90%;
-  }
-  
-  .test a:hover {
-    color: aquamarine;
-    font-weight: bolder;
-  }
-  
-  .nav-item a:hover {
-    color: rgb(102, 187, 159);
-  }
-  
-  .navbarButton {
-    margin-right: -30px;
-    padding: 0px;
-  }
-  
-  .btIfor {
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: clamp(8px, 1vw, 5rem);
-  }
-  
-  .btIfor a {
-    text-decoration: none;
-    color: rgb(109, 106, 106);
-    padding: 2px 5px;
-  }
-  
-  .btIfor a:hover {
-    color: rgb(23, 50, 202);
-  }
-  
-  .firstBtIfor {
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 1199px) {
-    .navList a {
-      font-size: 0.6rem;
-    }
-  
-    .navLink2 {
-      font-size: clamp(1rem, 1vw, 1.2rem);
-      font-weight: 550;
-    }
-  
-    .navbar-brand2 {
-      font-style: italic;
-      font-weight: bolder;
-      font-size: clamp(1.4rem, 1.8vw, 1.8rem);
-    }
-  }
-  
+}
