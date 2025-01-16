@@ -92,9 +92,8 @@ body::-webkit-scrollbar-thumb {
   padding: 1em;
   width: 70%;
   flex-grow: 1;
-  position: relative;
   display: grid;
-  grid-template-rows: 1fr 7fr;
+
   gap: 1em;
 }
 
@@ -176,11 +175,11 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   gap: 0.3em;
-
-  width: 30%;
+  width: 40%;
   justify-content: center;
   padding-left: 3em;
-  & span {
+
+  & .sub_text {
     font-size: 1.5em;
     color: #666666;
   }
@@ -190,38 +189,38 @@ body::-webkit-scrollbar-thumb {
   }
 
   & label {
-    border-bottom: 2px solid black;
     font-size: 1.9em;
     cursor: pointer;
-    display: flex;
     align-items: center;
     gap: 0.3em;
     color: #333333;
-  }
-
-  & ul {
-    display: block;
-    opacity: 0;
-    transform: translateY(-5px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    width: 110px;
-    height: auto;
-    background-color: white;
-    position: absolute;
-    left: 10.4em;
-    top: 5.5em;
-    z-index: 999;
-
-    & li {
-      border-bottom: 1px solid #c1c1be;
-      font-size: 1.5em;
-      padding-left: 5px;
-      color: #5c5c5c;
-    }
+    padding: 0.2em;
+    border-bottom: 1px solid #666666;
+    position: relative;
   }
 }
 
-#toggle_select:checked + label + span + ul {
+.dropdown_content {
+  display: block;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  z-index: 999;
+  position: absolute;
+  margin-top: 0.3em;
+  left: 0;
+  padding: 0.2em 0em;
+
+  & a {
+    padding-left: 0.3em;
+    color: #5c5c5c;
+  }
+}
+
+#toggle_select:checked + label .dropdown_content {
   display: block;
   opacity: 1;
   transform: translateY(0);
@@ -237,7 +236,7 @@ footer {
   padding: 1em;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .drop_menu {
     display: flex;
     width: 100%;
@@ -260,17 +259,17 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .card_section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .drop_menu {
     display: flex;
     width: 100%;
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding: 0;
   }
 
