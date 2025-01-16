@@ -146,3 +146,67 @@
   justify-content: space-around;
   padding: 30px;
 }
+
+
+/* 타워 브리지 */
+.main-content {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.image-container {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.bridge-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-container {
+  flex: 1 1 45%;
+}
+
+.text-container h2 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.text-container p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.text-container .more-info {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.text-container .more-info:hover {
+  background-color: #0056b3;
+}
