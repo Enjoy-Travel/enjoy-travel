@@ -1,3 +1,8 @@
+*{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  list-style: none;
+}
+
 .me-free {
   margin-right: 50px;
 }
@@ -142,16 +147,19 @@
 
 .back1 {
   background-color: rgb(213, 242, 252);
+  border: 1px solid rgb(155, 155, 155);
   padding: 10px;
 }
 
 .back2 {
   background-color: rgb(240, 123, 27);
+  border: 1px solid rgb(155, 155, 155);
   padding: 10px;
 }
 
 .back3 {
-  background-color: #5670ff;
+  background-color: #1761ff;
+  border: 1px solid rgb(155, 155, 155);
   padding: 10px;
 }
 
@@ -164,6 +172,11 @@
 .cardImg {
   width: clamp(7.5rem, 50vh, 90%);
   max-height: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardImg:hover {
+  animation: moveUpDown 1s cubic-bezier(0.3, 0, 1, 1);
 }
 
 .cardP {
@@ -177,6 +190,10 @@
 
 .cardP p {
   margin: 0;
+}
+
+.card-group img {
+  border-radius: 10px;
 }
 
 .carouselBar {
@@ -246,6 +263,21 @@
   width: clamp(30%, 35%, 40%);
   margin-left: 10%;
 }
+
+
+
+.content1 img{
+  width: 120%;
+  min-height: 330px;
+}
+
+
+
+
+
+
+
+
 
 .midContent {
   justify-content: center;
@@ -328,5 +360,20 @@
 
   .bottomCentent h4 {
     background-color: azure;
+  }
+  .cardImg:hover{
+    animation: none;
+  }
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
