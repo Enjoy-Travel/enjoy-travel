@@ -91,10 +91,35 @@ let cards = [
     area: "서울특별시",
     hashtags: ["데이트", "연인"],
   },
+  {
+    img: "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202310/12/58cc2a55-ef6d-4ccb-b2aa-b13ce9cfedcc.jpg",
+    title: "송도 센트럴파크",
+    area: "인천광역시",
+    hashtags: ["야경", "데이트"],
+  },
+  {
+    img: "https://newsroom.posco.com/kr/wp-content/uploads/2021/12/1203_posco_space_03.png",
+    title: "스페이스워크 ",
+    area: "경북 포항시",
+    hashtags: ["스카이워크", "우주"],
+  },
+  {
+    img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=4ca190d5-05dc-45bd-a659-f182ad8b145e",
+    title: "소수서원 ",
+    area: "경북 영주시",
+    hashtags: ["유네스코 세계유산"],
+  },
 ];
 
-const ddd = (i) => {
-  document.getElementById(`card_${i}`).classList.add("like");
+const toggleLike = (i) => {
+  const isLiked = localStorage.getItem(`card_${i}`);
+  if (isLiked === "liked") {
+    localStorage.removeItem(`card_${i}`);
+    document.getElementById(`card_${i}`).classList.remove("like");
+  } else {
+    localStorage.setItem(`card_${i}`, "liked");
+    document.getElementById(`card_${i}`).classList.add("like");
+  }
 };
 
 const placeCard = () => {
@@ -107,7 +132,7 @@ const placeCard = () => {
             src="${card.img}"
             alt=""
           />
-          <button class="card_likes"  id="card_${i}" onclick="ddd(${i})">
+          <button class="card_likes"  id="card_${i}" onclick="toggleLike(${i})">
             <i class="fa-solid fa-heart"></i>
           </button>
 
@@ -117,19 +142,22 @@ const placeCard = () => {
               <p>${card.area}</p>
             </div>
           <div class="card_tags"> 
-          ${card.hashtags
-            .map((tag, i) => `<span>#${tag}</span>`)
-            .join("")}</div>
+          ${card.hashtags.map((tag) => `<span>#${tag}</span>`).join("")}</div>
           </div>
         </div>
     `;
+
+    const isLiked = localStorage.getItem(`card_${i}`);
+    if (isLiked === "liked") {
+      document.getElementById(`card_${i}`).classList.add("like");
+    }
   });
 };
 
 const checkLocation = () => {
   regions.forEach((region, i) => {
     if (currentLocation.includes(region.link)) {
-      document.getElementById(`item_${i}`).classList.add("active");
+      document.getElementById(`item_${i}`).classList.add("location_active");
     }
   });
 };
