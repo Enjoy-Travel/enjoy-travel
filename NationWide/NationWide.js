@@ -1,7 +1,7 @@
 const regions = [
   {
     name: "전국",
-    link: "/NationWide/NationWide.html",
+    link: ["/NationWide/NationWide.html", "/NationWide/NationWideRes.html"],
     img: "https://cdn-icons-png.flaticon.com/256/4498/4498474.png",
   },
   {
@@ -56,33 +56,14 @@ const regions = [
   },
 ];
 
-let nav = document.getElementById("nav_items");
-let currentLocation = window.location.href;
-
-const navPlace = () => {
-  nav.innerHTML = "";
-  regions.forEach((region, i) => {
-    nav.innerHTML += `
-      <div class="nav_inner"  id="item_${i}">
-        <a href="${region.link}" class="nav_link">
-          <img src="${region.img}" class="nav_item item_${i}" id="nav_img${i}" ></img>
-        </a>
-        <a href="${region.link}" class="nav_link">
-          <label class="nav_title">${region.name}</label>
-        </a>
-      </div>
-    `;
-  });
-};
-
-let cardSection = document.querySelector(".card_section");
-
 let cards = [
   {
     img: "https://i.namu.wiki/i/S6A1BazT7gUkz7BD8p3LEop0p5cTCobCH62DcLfWjNq8SzOtFKVnol2Yc0x9wDK9XG_u29aYYDzkMb_uroeq3w.webp",
     title: "롯데월드타워",
     area: "서울 송파구",
     hashtags: ["전망대", "연인"],
+    detail:
+      "https://korean.visitkorea.or.kr/main/area.do#0097e8ba-126b-47b2-8280-51c55b1176c4",
   },
 
   {
@@ -105,7 +86,7 @@ let cards = [
   },
   {
     img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=4ca190d5-05dc-45bd-a659-f182ad8b145e",
-    title: "소수서원 ",
+    title: "소수서원",
     area: "경북 영주시",
     hashtags: ["유네스코 세계유산"],
   },
@@ -129,52 +110,79 @@ let cards = [
   },
 ];
 
+let nav = document.getElementById("nav_items");
+let currentLocation = window.location.href;
+let cardSection = document.querySelector(".card_section");
+
+const navPlace = () => {
+  nav.innerHTML = "";
+  regions.forEach((region, i) => {
+    nav.innerHTML += `
+          <div class="nav_inner"  id="item_${i}">
+            <a href="${region.link[0]}" class="nav_link">
+              <img src="${region.img}" class="nav_item item_${i}" id="nav_img${i}" ></img>
+            </a>
+            <a href="${region.link}" class="nav_link">
+              <label class="nav_title">${region.name}</label>
+            </a>
+          </div>
+        `;
+  });
+};
+
 const toggleLike = (i) => {
-  const isLiked = localStorage.getItem(`card_${i}`);
+  const isLiked = localStorage.getItem(`content_place${i}`);
   if (isLiked === "liked") {
-    localStorage.removeItem(`card_${i}`);
-    document.getElementById(`card_${i}`).classList.remove("like");
+    localStorage.removeItem(`content_place${i}`);
+    document.getElementById(`content_place${i}`).classList.remove("like");
   } else {
-    localStorage.setItem(`card_${i}`, "liked");
-    document.getElementById(`card_${i}`).classList.add("like");
+    localStorage.setItem(`content_place${i}`, "liked");
+    document.getElementById(`content_place${i}`).classList.add("like");
   }
 };
 
 const placeCard = () => {
   cardSection.innerHTML = "";
 
-  cards.forEach((card, i) => {
+  cards.forEach((item, i) => {
     cardSection.innerHTML += `
-    <div class="card">
-          <img
-            src="${card.img}"
-            alt=""
-          />
-          <button class="card_likes"  id="card_${i}" onclick="toggleLike(${i})">
-            <i class="fa-solid fa-heart"></i>
-          </button>
-
-          <div class="card_text">
-            <div>
-              <h3>${card.title}</h3>
-              <p>${card.area}</p>
+        <div class="card">
+ 
+              <img
+                src="${item.img}"
+                alt=""
+              />
+       
+              <button class="card_likes"  id="content_place${i}" onclick="toggleLike(${i})">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+  
+              <div class="card_text">
+                <div>
+                  <h3>${item.title}</h3>
+                  <p>${item.area}</p>
+                </div>    
+          
+                 <div > 
+                  ${item.hashtags.map((tag) => `<span>#${tag}</span>`).join("")}
+                  </div>
+               </div>
+              <a href="${
+                item.detail
+              }" ><i class="fa-solid fa-arrow-right"></i></a>
             </div>
-          <div > 
-          ${card.hashtags.map((tag) => `<span>#${tag}</span>`).join("")}</div>
-          </div>
-        </div>
-    `;
+        `;
 
-    const isLiked = localStorage.getItem(`card_${i}`);
+    const isLiked = localStorage.getItem(`content_place${i}`);
     if (isLiked === "liked") {
-      document.getElementById(`card_${i}`).classList.add("like");
+      document.getElementById(`content_place${i}`).classList.add("like");
     }
   });
 };
 
 const checkLocation = () => {
   regions.forEach((region, i) => {
-    if (currentLocation.includes(region.link)) {
+    if (region.link.some((link) => currentLocation.includes(link))) {
       document.getElementById(`item_${i}`).classList.add("location_active");
     }
   });

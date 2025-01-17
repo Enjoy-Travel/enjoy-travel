@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+/* body {
+  padding-top: 100px;
+} */
+
 .me-free {
   margin-right: 50px;
 }
@@ -298,7 +302,7 @@
   width: 50%;
 }
 
-.midContentText>div {
+.midContentText > div {
   margin-top: 10px;
 }
 
