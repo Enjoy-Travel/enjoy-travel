@@ -81,14 +81,14 @@ let cards = [
   {
     img: "https://i.namu.wiki/i/S6A1BazT7gUkz7BD8p3LEop0p5cTCobCH62DcLfWjNq8SzOtFKVnol2Yc0x9wDK9XG_u29aYYDzkMb_uroeq3w.webp",
     title: "롯데월드타워",
-    area: "서울특별시",
+    area: "서울 송파구",
     hashtags: ["전망대", "연인"],
   },
 
   {
     img: "https://i.namu.wiki/i/KJ42M2qPSn4OB9mVo2WL2JerLzOiwTL9VaLkA_3CsaubW5pUA6wUlSK2UDeT3bI0cRsStV5r7a5sXq3Eo15czA.webp",
     title: "석촌호수",
-    area: "서울특별시",
+    area: "서울 송파구",
     hashtags: ["데이트", "연인"],
   },
   {
@@ -107,6 +107,24 @@ let cards = [
     img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=4ca190d5-05dc-45bd-a659-f182ad8b145e",
     title: "소수서원 ",
     area: "경북 영주시",
+    hashtags: ["유네스코 세계유산"],
+  },
+  {
+    img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f7b96f6f-2450-46bd-9c77-bc64136139de",
+    title: "여수예술랜드",
+    area: "전남 여수시",
+    hashtags: ["가족과함께", "여수여행"],
+  },
+  {
+    img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0aadcf3f-19b6-4f99-a344-ddbd61d0a388",
+    title: "서대문자연사박물관",
+    area: "서울 서대문구",
+    hashtags: ["가족여행", "박물관"],
+  },
+  {
+    img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=d0e95063-8876-4fe8-ad0f-289a97d3607a",
+    title: "안동 하회마을",
+    area: "경북 안동시",
     hashtags: ["유네스코 세계유산"],
   },
 ];
@@ -141,7 +159,7 @@ const placeCard = () => {
               <h3>${card.title}</h3>
               <p>${card.area}</p>
             </div>
-          <div class="card_tags"> 
+          <div > 
           ${card.hashtags.map((tag) => `<span>#${tag}</span>`).join("")}</div>
           </div>
         </div>

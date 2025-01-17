@@ -153,6 +153,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     gap: 0.3em;
     align-items: center;
+    margin-bottom: 1em;
 
     & p {
       color: #666666;
