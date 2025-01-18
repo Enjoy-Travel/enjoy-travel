@@ -51,9 +51,9 @@
           <div id="underline"></div>
           <ul>
             <li><a href="#">사진보기</a></li>
-            <li><a href="#">상세정보</a></li>
-            <li><a href="#">여행톡</a></li>
-            <li><a href="#">추천여행</a></li>
+            <li><button onclick="alert(`준비중입니다.`)">상세정보</button></a></li>
+            <li><button onclick="alert(`준비중입니다.`)">여행톡</button></li>
+            <li><button onclick="alert(`준비중입니다.`)">추천여행</button></li>
           </ul>
         </div>
         <div class="detail_img">
@@ -93,34 +93,64 @@
             alt=""
           />
           <div>
-            <ul>
-              <li><span>문의 및 안내</span><span>0507-1432-9885</span></li>
+            <ul class="detail_storeInfo">
               <li>
-                <span>영업시간</span
+                <span class="storeinfo_title">• 문의 및 안내</span
+                ><span>0507-1432-9885</span>
+              </li>
+              <li>
+                <span class="storeinfo_title">• 영업시간</span
                 ><span
-                  >07:00-19:00 (브레이크타임 16:00-17:00) * 18:55 라스트오더
+                  >07:00-19:00 (브레이크타임 16:00-17:00) <br />
+                  * 18:55 라스트오더
                 </span>
               </li>
-              <li><span>좌석수</span><span>120석</span></li>
-              <li><span>취급메뉴</span><span>원조짬순(짬뽕순두부)</span></li>
               <li>
-                <span>주소</span
+                <span class="storeinfo_title">• 좌석수</span><span>120석</span>
+              </li>
+              <li>
+                <span class="storeinfo_title">• 취급메뉴</span
+                ><span>원조짬순(짬뽕순두부)</span>
+              </li>
+              <li>
+                <span class="storeinfo_title">• 주소</span
                 ><span>강원특별자치도 강릉시 초당순두부길77번길 15</span>
               </li>
-              <li><span>휴일</span><span>매주 수요일</span></li>
-              <li><span>주차</span><span>있음(50대)</span></li>
-              <li><span>대표메뉴</span><span>초당순두부</span></li>
               <li>
-                <span>출입통로</span
+                <span class="storeinfo_title">• 휴일</span
+                ><span>매주 수요일</span>
+              </li>
+              <li>
+                <span class="storeinfo_title">• 주차</span
+                ><span>있음(50대)</span>
+              </li>
+              <li>
+                <span class="storeinfo_title">• 대표메뉴</span
+                ><span>초당순두부</span>
+              </li>
+              <li>
+                <span class="storeinfo_title">• 출입통로</span
                 ><span> 주출입구는 턱이 없어 휠체어 접근 가능함</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <a class="top_btn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
     </main>
 
     <footer></footer>
   </body>
+  <script>
+    window.addEventListener("scroll", function () {
+  const topBtn = document.querySelector(".top_btn");
+  if (window.scrollY > 250) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
+});
+  </script>
   <script src="/index.js"></script>
+
 </html>

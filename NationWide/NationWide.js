@@ -6,52 +6,52 @@ const regions = [
   },
   {
     name: "서울",
-    link: "/Seoul/Seoul.html",
+    link: ["/components/placeholder/placeholder.html"],
     img: "../images/local/seoul.jpg",
   },
   {
     name: "경기",
-    link: "/Gyeonggi/Gyeonggi.html",
+    link: ["/Gyeonggi/Gyeonggi.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "강원",
-    link: "/Gangwon.html",
+    link: ["/components/placeholder/placeholder.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "충북",
-    link: "/Chungbuk.html",
+    link: ["/components/placeholder/placeholder.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "충남",
-    link: "/Chungnam.html",
+    link: ["/components/placeholder/placeholder.html"],
     img: "../images/local/chungnam.jpg",
   },
   {
     name: "경북",
-    link: "/Gyeongbuk.html",
+    link: ["/components/placeholder/placeholder.html"],
     img: "../images/local/gyeongbuk.jpg",
   },
   {
     name: "경남",
-    link: "/Gyeongnam.html",
+    link: ["/components/placeholder/placeholder.html"],
     img: "../images/local/gyeongnam.jpg",
   },
   {
     name: "전북",
-    link: "/Jeonbuk.html",
+    link: ["/components/placeholder/placeholder.html"],
     img: "../images/local/jeonbuk.jpg",
   },
   {
     name: "전남",
-    link: "/Jeonnam.html",
+    link: ["/components/placeholder/placeholder.html"],
     img: "../images/local/jeonnam.jpg",
   },
   {
     name: "제주",
-    link: "/Jeju/Jeju.html",
+    link: ["/components/placeholderNav/placeholderNav.html"],
     img: "../images/local/jeju.jpg",
   },
 ];
@@ -62,10 +62,8 @@ let cards = [
     title: "롯데월드타워",
     area: "서울 송파구",
     hashtags: ["전망대", "연인"],
-    detail:
-      "https://korean.visitkorea.or.kr/main/area.do#0097e8ba-126b-47b2-8280-51c55b1176c4",
+    detail: "/components/placeholder/placeholder.html",
   },
-
   {
     img: "https://i.namu.wiki/i/KJ42M2qPSn4OB9mVo2WL2JerLzOiwTL9VaLkA_3CsaubW5pUA6wUlSK2UDeT3bI0cRsStV5r7a5sXq3Eo15czA.webp",
     title: "석촌호수",

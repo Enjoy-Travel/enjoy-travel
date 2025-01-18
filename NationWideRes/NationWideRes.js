@@ -6,52 +6,52 @@ const regions = [
   },
   {
     name: "서울",
-    link: "/Seoul/Seoul.html",
+    link: ["url.html"],
     img: "../images/local/seoul.jpg",
   },
   {
     name: "경기",
-    link: "/Gyeonggi/Gyeonggi.html",
+    link: ["url.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "강원",
-    link: "/Gangwon.html",
+    link: ["url.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "충북",
-    link: "/Chungbuk.html",
+    link: ["url.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "충남",
-    link: "/Chungnam.html",
+    link: ["url.html"],
     img: "../images/local/chungnam.jpg",
   },
   {
     name: "경북",
-    link: "/Gyeongbuk.html",
+    link: ["url.html"],
     img: "../images/local/gyeongbuk.jpg",
   },
   {
     name: "경남",
-    link: "/Gyeongnam.html",
+    link: ["url.html"],
     img: "../images/local/gyeongnam.jpg",
   },
   {
     name: "전북",
-    link: "/Jeonbuk.html",
+    link: ["url.html"],
     img: "../images/local/jeonbuk.jpg",
   },
   {
     name: "전남",
-    link: "/Jeonnam.html",
+    link: ["url.html"],
     img: "../images/local/jeonnam.jpg",
   },
   {
     name: "제주",
-    link: "/Jeju/Jeju.html",
+    link: ["/components/placeholderNav/placeholderNav.html"],
     img: "../images/local/jeju.jpg",
   },
 ];
@@ -70,6 +70,7 @@ let restaurants = [
     title: "이진상화",
     area: "경기 이천시",
     hashtags: ["베이커리"],
+    detail: "/components/placeholder/placeholder.html",
   },
   {
     img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=07b5e82c-ebb7-4cf7-96f4-1e2a5454632f",
