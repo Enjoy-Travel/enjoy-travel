@@ -1,0 +1,156 @@
+.detail_main {
+  width: 70%;
+  margin: auto;
+  padding: 2em;
+
+  & > div:first-child {
+    font-size: 1.3em;
+    color: #666666;
+    position: relative;
+
+    & span {
+      padding-left: 1.3em;
+    }
+
+    .comment_icon {
+      transform: scaleX(-1);
+      font-size: 1.2em;
+      position: absolute;
+      top: -8px;
+    }
+  }
+}
+
+.detail_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  letter-spacing: 0.5px;
+
+  & h2 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  & p {
+    color: #666666;
+    font-size: 1.1em;
+  }
+
+  & h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    box-shadow: inset 0 -12px 0 rgba(255, 223, 223, 1);
+    padding: 0em 1em;
+    line-height: 35px;
+    margin-bottom: 1em;
+  }
+}
+
+.detail_subIcon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+
+  & span {
+    display: flex;
+    gap: 0.7em;
+  }
+}
+
+.detail_tab {
+  margin: 2em 0em;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 1em 0em;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+
+  & ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+#underline {
+  width: 6em;
+  background-color: #333333;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  left: 5.4em;
+}
+
+.detail_img {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-bottom: 2em;
+  & img {
+    width: 100%;
+  }
+
+  & > div:last-child {
+    position: relative;
+    display: flex;
+  }
+}
+
+.img_text {
+  position: absolute;
+  top: 35%;
+  left: 1em;
+  font-size: 1.3em;
+  color: white;
+  letter-spacing: 0.5px;
+
+  & i {
+    margin-right: 0.3em;
+    font-size: 1.5em;
+  }
+}
+
+.detail_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  & p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    letter-spacing: -1px;
+  }
+
+  & img {
+    width: 100%;
+    height: 18em;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  & li {
+    list-style: "•";
+  }
+}
+
+.info_title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #333333;
+  padding: 1em 0em;
+
+  & h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+
+  & button {
+    background-color: white;
+    border: 1px solid #666666;
+    padding: 0.5em 1em;
+    display: flex;
+    gap: 0.3em;
+  }
+}

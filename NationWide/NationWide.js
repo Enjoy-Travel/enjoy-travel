@@ -71,47 +71,53 @@ let cards = [
     title: "석촌호수",
     area: "서울 송파구",
     hashtags: ["데이트", "연인"],
+    detail: "/components/placeholder/placeholder.html",
   },
   {
     img: "https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202310/12/58cc2a55-ef6d-4ccb-b2aa-b13ce9cfedcc.jpg",
     title: "송도 센트럴파크",
     area: "인천광역시",
     hashtags: ["야경", "데이트"],
+    detail: "/components/placeholder/placeholder.html",
   },
   {
     img: "https://newsroom.posco.com/kr/wp-content/uploads/2021/12/1203_posco_space_03.png",
     title: "스페이스워크 ",
     area: "경북 포항시",
     hashtags: ["스카이워크", "우주"],
+    detail: "/components/placeholder/placeholder.html",
   },
   {
     img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=4ca190d5-05dc-45bd-a659-f182ad8b145e",
     title: "소수서원",
     area: "경북 영주시",
     hashtags: ["유네스코 세계유산"],
+    detail: "/components/placeholder/placeholder.html",
   },
   {
     img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f7b96f6f-2450-46bd-9c77-bc64136139de",
     title: "여수예술랜드",
     area: "전남 여수시",
     hashtags: ["가족과함께", "여수여행"],
+    detail: "/components/placeholder/placeholder.html",
   },
   {
     img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=0aadcf3f-19b6-4f99-a344-ddbd61d0a388",
     title: "서대문자연사박물관",
     area: "서울 서대문구",
     hashtags: ["가족여행", "박물관"],
+    detail: "/components/placeholder/placeholder.html",
   },
   {
     img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=d0e95063-8876-4fe8-ad0f-289a97d3607a",
     title: "안동 하회마을",
     area: "경북 안동시",
     hashtags: ["유네스코 세계유산"],
+    detail: "/components/placeholder/placeholder.html",
   },
 ];
 
 let nav = document.getElementById("nav_items");
-let currentLocation = window.location.href;
 let cardSection = document.querySelector(".card_section");
 
 const navPlace = () => {
@@ -181,12 +187,22 @@ const placeCard = () => {
 };
 
 const checkLocation = () => {
+  const pathName = window.location.pathname;
   regions.forEach((region, i) => {
-    if (region.link.some((link) => currentLocation.includes(link))) {
+    if (region.link.some((link) => pathName.includes(link))) {
       document.getElementById(`item_${i}`).classList.add("location_active");
     }
   });
 };
+
+window.addEventListener("scroll", function () {
+  const topBtn = document.querySelector(".top_btn");
+  if (window.scrollY > 250) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
+});
 
 navPlace();
 placeCard();

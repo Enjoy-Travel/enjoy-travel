@@ -1,7 +1,7 @@
 const regions = [
   {
     name: "전국",
-    link: ["/NationWide/NationWide.html", "/NationWide/NationWideRes.html"],
+    link: ["/NationWide/NationWide.html", "/NationWideRes/NationWideRes.html"],
     img: "https://cdn-icons-png.flaticon.com/256/4498/4498474.png",
   },
   {
@@ -62,6 +62,7 @@ let restaurants = [
     title: "강릉짬뽕순두부 동화가든",
     area: "강원 강릉시",
     hashtags: ["초당마을", "짬뽕순두부"],
+    detail: "/NationWideDetail/NationWideDetail.html",
   },
 
   {
@@ -109,7 +110,6 @@ let restaurants = [
 ];
 
 let nav = document.getElementById("nav_items");
-let currentLocation = window.location.href;
 let restaurantSection = document.querySelector(".restaurant_section");
 
 const navPlace = () => {
@@ -175,12 +175,23 @@ const restaurantCard = () => {
 };
 
 const checkLocation = () => {
+  const pathName = window.location.pathname;
   regions.forEach((region, i) => {
-    if (region.link.some((link) => currentLocation.includes(link))) {
+    if (region.link.some((link) => pathName.includes(link))) {
       document.getElementById(`item_${i}`).classList.add("location_active");
     }
   });
 };
+
+window.addEventListener("scroll", function () {
+  const topBtn = document.querySelector(".top_btn");
+  if (window.scrollY > 250) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
+});
+
 navPlace();
 restaurantCard();
 checkLocation();
