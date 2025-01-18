@@ -158,7 +158,17 @@
   }
 }
 
+@media (max-width: 600px) {
+  .attraction {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media (max-width: 1199px) {
   .navList a {
@@ -177,12 +187,31 @@
   }
 }
 
+.attraction-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .attraction {
   display: flex;
   justify-content: space-around;
   padding: 30px;
 }
 
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  height: 200px;
+}
+
+.outofservice {
+  width: 100%;
+  height: 200px;
+  background-color: yellow;
+  text-align: center;
+}
 
 /* 타워 브리지 */
 .main-content {
