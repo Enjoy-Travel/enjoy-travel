@@ -1,57 +1,57 @@
 const regions = [
   {
     name: "전국",
-    link: ["/NationWide/NationWide.html", "/NationWide/NationWideRes.html"],
+    link: ["/NationWide/NationWide.html", "/NationWideRes/NationWideRes.html"],
     img: "https://cdn-icons-png.flaticon.com/256/4498/4498474.png",
   },
   {
     name: "서울",
-    link: "/Seoul/Seoul.html",
+    link: ["url.html"],
     img: "../images/local/seoul.jpg",
   },
   {
     name: "경기",
-    link: "/Gyeonggi/Gyeonggi.html",
+    link: ["url.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "강원",
-    link: "/Gangwon.html",
+    link: ["url.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "충북",
-    link: "/Chungbuk.html",
+    link: ["url.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "충남",
-    link: "/Chungnam.html",
+    link: ["url.html"],
     img: "../images/local/chungnam.jpg",
   },
   {
     name: "경북",
-    link: "/Gyeongbuk.html",
+    link: ["url.html"],
     img: "../images/local/gyeongbuk.jpg",
   },
   {
     name: "경남",
-    link: "/Gyeongnam.html",
+    link: ["url.html"],
     img: "../images/local/gyeongnam.jpg",
   },
   {
     name: "전북",
-    link: "/Jeonbuk.html",
+    link: ["url.html"],
     img: "../images/local/jeonbuk.jpg",
   },
   {
     name: "전남",
-    link: "/Jeonnam.html",
+    link: ["url.html"],
     img: "../images/local/jeonnam.jpg",
   },
   {
     name: "제주",
-    link: "/Jeju/Jeju.html",
+    link: ["/components/placeholderNav/placeholderNav.html"],
     img: "../images/local/jeju.jpg",
   },
 ];
@@ -62,6 +62,7 @@ let restaurants = [
     title: "강릉짬뽕순두부 동화가든",
     area: "강원 강릉시",
     hashtags: ["초당마을", "짬뽕순두부"],
+    detail: "/NationWideDetail/NationWideDetail.html",
   },
 
   {
@@ -69,6 +70,7 @@ let restaurants = [
     title: "이진상화",
     area: "경기 이천시",
     hashtags: ["베이커리"],
+    detail: "/components/placeholder/placeholder.html",
   },
   {
     img: "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=07b5e82c-ebb7-4cf7-96f4-1e2a5454632f",
@@ -109,7 +111,6 @@ let restaurants = [
 ];
 
 let nav = document.getElementById("nav_items");
-let currentLocation = window.location.href;
 let restaurantSection = document.querySelector(".restaurant_section");
 
 const navPlace = () => {
@@ -175,12 +176,23 @@ const restaurantCard = () => {
 };
 
 const checkLocation = () => {
+  const pathName = window.location.pathname;
   regions.forEach((region, i) => {
-    if (region.link.some((link) => currentLocation.includes(link))) {
+    if (region.link.some((link) => pathName.includes(link))) {
       document.getElementById(`item_${i}`).classList.add("location_active");
     }
   });
 };
+
+window.addEventListener("scroll", function () {
+  const topBtn = document.querySelector(".top_btn");
+  if (window.scrollY > 250) {
+    topBtn.classList.add("show");
+  } else {
+    topBtn.classList.remove("show");
+  }
+});
+
 navPlace();
 restaurantCard();
 checkLocation();
