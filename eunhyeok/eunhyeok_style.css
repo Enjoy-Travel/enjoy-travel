@@ -13,6 +13,11 @@
   font-size: 0.8rem;
 }
 
+.regionList a {
+  text-decoration: none;
+  color: black;
+}
+
 .navbar-brand2 {
   font-style: italic;
   font-weight: bolder;
