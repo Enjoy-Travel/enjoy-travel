@@ -6,12 +6,12 @@ const regions = [
   },
   {
     name: "서울",
-    link: ["/components/placeholder/placeholder.html"],
+    link: ["#"],
     img: "../images/local/seoul.jpg",
   },
   {
     name: "경기",
-    link: ["/Gyeonggi/Gyeonggi.html"],
+    link: ["#"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
@@ -21,37 +21,37 @@ const regions = [
   },
   {
     name: "충북",
-    link: ["/components/placeholder/placeholder.html"],
+    link: ["#"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
     name: "충남",
-    link: ["/components/placeholder/placeholder.html"],
+    link: ["#"],
     img: "../images/local/chungnam.jpg",
   },
   {
     name: "경북",
-    link: ["/components/placeholder/placeholder.html"],
+    link: ["#"],
     img: "../images/local/gyeongbuk.jpg",
   },
   {
     name: "경남",
-    link: ["/components/placeholder/placeholder.html"],
+    link: ["#"],
     img: "../images/local/gyeongnam.jpg",
   },
   {
     name: "전북",
-    link: ["/components/placeholder/placeholder.html"],
+    link: ["#"],
     img: "../images/local/jeonbuk.jpg",
   },
   {
     name: "전남",
-    link: ["/components/placeholder/placeholder.html"],
+    link: ["#"],
     img: "../images/local/jeonnam.jpg",
   },
   {
     name: "제주",
-    link: ["/components/placeholderNav/placeholderNav.html"],
+    link: ["/components/placeholdernav/placeholdernav"],
     img: "../images/local/jeju.jpg",
   },
 ];
@@ -121,16 +121,20 @@ let cardSection = document.querySelector(".card_section");
 const navPlace = () => {
   nav.innerHTML = "";
   regions.forEach((region, i) => {
-    nav.innerHTML += `
-          <div class="nav_inner"  id="item_${i}">
-            <a href="${region.link[0]}" class="nav_link">
-              <img src="${region.img}" class="nav_item item_${i}" id="nav_img${i}" ></img>
-            </a>
-            <a href="${region.link}" class="nav_link">
-              <label class="nav_title">${region.name}</label>
-            </a>
-          </div>
-        `;
+    nav.innerHTML += (
+      <div class="nav_inner" id="item_${i}">
+        <a href="${region.link[0]}" class="nav_link">
+          <img
+            src="${region.img}"
+            class="nav_item item_${i}"
+            id="nav_img${i}"
+          ></img>
+        </a>
+        <a href="${region.link}" class="nav_link">
+          <label class="nav_title">${region.name}</label>
+        </a>
+      </div>
+    );
   });
 };
 
@@ -149,33 +153,37 @@ const placeCard = () => {
   cardSection.innerHTML = "";
 
   cards.forEach((item, i) => {
-    cardSection.innerHTML += `
-        <div class="card">
- 
-              <img
-                src="${item.img}"
-                alt=""
-              />
-       
-              <button class="card_likes"  id="content_place${i}" onclick="toggleLike(${i})">
-                <i class="fa-solid fa-heart"></i>
-              </button>
-  
-              <div class="card_text">
-                <div>
-                  <h3>${item.title}</h3>
-                  <p>${item.area}</p>
-                </div>    
-          
-                 <div > 
-                  ${item.hashtags.map((tag) => `<span>#${tag}</span>`).join("")}
-                  </div>
-               </div>
-              <a href="${
+    cardSection.innerHTML += (
+      <div class="card">
+        <img src="${item.img}" alt="" />
+
+        <button
+          class="card_likes"
+          id="content_place${i}"
+          onclick="toggleLike(${i})"
+        >
+          <i class="fa-solid fa-heart"></i>
+        </button>
+
+        <div class="card_text">
+          <div>
+            <h3>${item.title}</h3>
+            <p>${item.area}</p>
+          </div>
+
+          <div>
+            ${item.hashtags.map((tag) => <span>#${tag}</span>).join("")}
+          </div>
+        </div>
+        <a
+          href="${
                 item.detail
-              }" ><i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        `;
+              }"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    );
 
     const isLiked = localStorage.getItem(`content_place${i}`);
     if (isLiked === "liked") {
