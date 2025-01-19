@@ -121,7 +121,7 @@ let cardSection = document.querySelector(".card_section");
 const navPlace = () => {
   nav.innerHTML = "";
   regions.forEach((region, i) => {
-    nav.innerHTML += (
+    nav.innerHTML += `
       <div class="nav_inner" id="item_${i}">
         <a href="${region.link[0]}" class="nav_link">
           <img
@@ -134,7 +134,7 @@ const navPlace = () => {
           <label class="nav_title">${region.name}</label>
         </a>
       </div>
-    );
+    `;
   });
 };
 
