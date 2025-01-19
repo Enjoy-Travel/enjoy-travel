@@ -153,7 +153,7 @@ const placeCard = () => {
   cardSection.innerHTML = "";
 
   cards.forEach((item, i) => {
-    cardSection.innerHTML += (
+    cardSection.innerHTML += `
       <div class="card">
         <img src="${item.img}" alt="" />
 
@@ -176,14 +176,12 @@ const placeCard = () => {
           </div>
         </div>
         <a
-          href="${
-                item.detail
-              }"
+          href="${item.detail}"
         >
           <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
-    );
+    `;
 
     const isLiked = localStorage.getItem(`content_place${i}`);
     if (isLiked === "liked") {
