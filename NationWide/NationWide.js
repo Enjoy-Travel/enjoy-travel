@@ -118,58 +118,72 @@ let cards = [
 let nav = document.getElementById("nav_items");
 let cardSection = document.querySelector(".card_section");
 
-const getBaseURL = () => {
-  if (
-    window.location.hostname === "localhost" ||
-    window.location.hostname === "127.0.0.1"
-  ) {
-    return "";
-  }
-  return window.location.origin;
-};
-
 const navPlace = () => {
   nav.innerHTML = "";
-  const baseURL = getBaseURL();
   regions.forEach((region, i) => {
-    nav.innerHTML += `
+    nav.innerHTML += (
       <div class="nav_inner" id="item_${i}">
-        <a href="${baseURL}${region.link[0]}" class="nav_link">
-          <img src="${region.img}" class="nav_item item_${i}" id="nav_img${i}">
+        <a href="${region.link[0]}" class="nav_link">
+          <img
+            src="${region.img}"
+            class="nav_item item_${i}"
+            id="nav_img${i}"
+          ></img>
         </a>
-        <a href="${baseURL}${region.link[0]}" class="nav_link">
+        <a href="${region.link}" class="nav_link">
           <label class="nav_title">${region.name}</label>
         </a>
       </div>
-    `;
+    );
   });
+};
+
+const toggleLike = (i) => {
+  const isLiked = localStorage.getItem(`content_place${i}`);
+  if (isLiked === "liked") {
+    localStorage.removeItem(`content_place${i}`);
+    document.getElementById(`content_place${i}`).classList.remove("like");
+  } else {
+    localStorage.setItem(`content_place${i}`, "liked");
+    document.getElementById(`content_place${i}`).classList.add("like");
+  }
 };
 
 const placeCard = () => {
   cardSection.innerHTML = "";
-  const baseURL = getBaseURL();
 
   cards.forEach((item, i) => {
-    cardSection.innerHTML += `
+    cardSection.innerHTML += (
       <div class="card">
-        <img src="${item.img}" alt="">
-        <button class="card_likes" id="content_place${i}" onclick="toggleLike(${i})">
+        <img src="${item.img}" alt="" />
+
+        <button
+          class="card_likes"
+          id="content_place${i}"
+          onclick="toggleLike(${i})"
+        >
           <i class="fa-solid fa-heart"></i>
         </button>
+
         <div class="card_text">
           <div>
             <h3>${item.title}</h3>
             <p>${item.area}</p>
-          </div>    
+          </div>
+
           <div>
-            ${item.hashtags.map((tag) => `<span>#${tag}</span>`).join("")}
+            ${item.hashtags.map((tag) => <span>#${tag}</span>).join("")}
           </div>
         </div>
-        <a href="${baseURL}${
-      item.detail
-    }"><i class="fa-solid fa-arrow-right"></i></a>
+        <a
+          href="${
+                item.detail
+              }"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
-    `;
+    );
 
     const isLiked = localStorage.getItem(`content_place${i}`);
     if (isLiked === "liked") {
