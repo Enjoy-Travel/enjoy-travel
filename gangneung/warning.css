@@ -1,0 +1,39 @@
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.warning-sign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.warning-icon {
+    font-size: 50px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+.warning-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.sub-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}

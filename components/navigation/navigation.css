@@ -1,0 +1,19 @@
+.region {
+  border-bottom: 0.5px solid rgb(189, 189, 189);
+  border-top: 0.5px solid rgb(189, 189, 189);
+  padding: 10px 0;
+}
+
+.regionList {
+  font-size: clamp(0.75rem, 1.1vw, 1.5vw);
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  white-space: none;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+  .region {
+    display: block;
+  }
+}

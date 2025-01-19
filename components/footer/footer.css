@@ -1,0 +1,49 @@
+.footerContent {
+  background-color: rgb(236, 236, 236);
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.fContent {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: clamp(0.7rem, 1.5vw, 2rem);
+}
+
+.btCList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btIfor {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(8px, 1vw, 5rem);
+}
+
+.btIfor a {
+  text-decoration: none;
+  color: rgb(109, 106, 106);
+  padding: 2px 5px;
+}
+
+.firstBtIfor {
+  margin-bottom: 10px;
+}
+
+.footerIf {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footerIf img {
+  width: clamp(4rem, 9vw, 10rem);
+  height: auto;
+  padding: 10px;
+}

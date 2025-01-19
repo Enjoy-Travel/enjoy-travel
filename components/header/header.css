@@ -1,0 +1,49 @@
+.navbar-brand2 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.8vw;
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+.navbarButton {
+  margin-right: -30px;
+  padding: 0px;
+}
+
+.me-free {
+  margin-right: 50px;
+}
+
+.navLink2 {
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
+  font-weight: 550;
+}
+
+@media (max-width: 1199px) {
+  .navList a {
+    font-size: 0.6rem;
+  }
+
+  .navLink2 {
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    font-weight: 550;
+  }
+
+  .navbar-brand2 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  }
+}
+
+/* .header_container {
+  position: fixed;
+  background-color: white;
+  justify-items: center;
+  border-bottom: 1px solid #bdbdbd;
+  transition: top 0.1s;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+} */
