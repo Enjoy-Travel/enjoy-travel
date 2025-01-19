@@ -1,7 +1,7 @@
 const regions = [
   {
     name: "전국",
-    link: ["/nationwide/nationwide", "/nationwide/nationwideres"],
+    link: ["/nationwide/nationwide", "/nationwideres/nationwideres"],
     img: "https://cdn-icons-png.flaticon.com/256/4498/4498474.png",
   },
   {
@@ -159,7 +159,7 @@ const placeCard = () => {
               src="${item.img}"
               alt=""
             />
-            <button class="card_likes"  id="content_res${i}" onclick="toggleLike(${i})">
+            <button class="card_likes"  id="content_place${i}" onclick="toggleLike(${i})">
               <i class="fa-solid fa-heart"></i>
             </button>
   
