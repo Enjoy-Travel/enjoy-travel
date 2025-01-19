@@ -1,7 +1,7 @@
 const regions = [
   {
     name: "전국",
-    link: ["/NationWide/NationWide.html", "/NationWide/NationWideRes.html"],
+    link: ["/NationWide/NationWide", "/NationWide/NationWideRes"],
     img: "https://cdn-icons-png.flaticon.com/256/4498/4498474.png",
   },
   {
