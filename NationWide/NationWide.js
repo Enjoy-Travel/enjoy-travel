@@ -16,7 +16,7 @@ const regions = [
   },
   {
     name: "강원",
-    link: ["/gangneung.html"],
+    link: ["/gangneung/gangneung.html"],
     img: "../images/local/gyeonggi.jpg",
   },
   {
