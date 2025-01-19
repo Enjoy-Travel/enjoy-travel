@@ -11,3 +11,9 @@
   white-space: none;
   max-width: 90%;
 }
+
+@media screen and (max-width: 1024px) {
+  .region {
+    display: block;
+  }
+}

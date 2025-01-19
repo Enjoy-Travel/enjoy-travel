@@ -11,6 +11,10 @@ header {
   background-color: #d4e4ff;
 }
 
+.region {
+  display: none;
+}
+
 .nationWide_container {
   display: flex;
   flex-direction: column;
@@ -392,6 +396,11 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
+  }
+
+  .story_box {
+    display: flex;
+    flex-direction: column;
   }
 }
 
