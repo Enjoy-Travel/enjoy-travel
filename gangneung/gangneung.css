@@ -1,3 +1,7 @@
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
 .body-container {
     display: flex;
     justify-content: center;
@@ -7,9 +11,9 @@
 
 main {
     display: flex;
-    margin: 20px 0;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .card-container {
@@ -48,4 +52,79 @@ main {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
+}
+
+.swiper-slide {
+    height: 500px;
+    background-color: aquamarine;
+}
+
+.swiper-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.swiper-img {
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-preview,
+.swiper-next {
+    width: 42px;
+    height: 42px;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.material-icons {
+    color: white;
+}
+
+.title {
+    text-decoration: none;
+    font-size: 2rem;
+    align-self: flex-start;
+    margin: 30px;
+    padding: 10px;
+}
+
+.user-card {
+    width: 1000px;
+    background-color: #f6f5f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.user-card:hover {
+    cursor: pointer;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-img {
+    width: 50px;
+    height: 50px;
+}
+
+.user-card-contents {
+    padding: 10px;
 }

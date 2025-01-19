@@ -9,62 +9,145 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+
     <script src="../index.js"></script>
+    <script src="swiper.js"></script>
     <link rel="stylesheet" href="../eunhyeok/eunhyeok_style.css">
     <link rel="stylesheet" href="gangneung.css">
-    <title>Document</title>
+    <title>enjoy-travel</title>
 </head>
 
 <body>
     <header></header>
     <main>
-        <div class="card-container">
-            <div class="card">
-                <div>
-                    <img src="./asset/beach-7142706.jpg" alt="" class="card-img">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-img" style="background-image: url('asset/beach-7142706.jpg');"
+                    onclick="location.href='sunrise.html'"></div>
+                <div class="swiper-slide swiper-img" style="background-image: url('asset/gangneung-2198026.jpg');">
                 </div>
-                <div class="img-explanation">
-                    해가 떠오르는 동해 바닷가
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="./asset/gangneung-2198026.jpg" alt="" class="card-img">
-                </div>
-                <div class="img-explanation">
-                    차갑게 부딪히는 파도
+                <div class="swiper-slide swiper-img"
+                    style="background-image: url('asset/the-snow-came-back-3523616.jpg'); background-position: center 75%;">
                 </div>
             </div>
-            <div class="card">
-                <div>
-                    <img src="./asset/gangneung-4959752.jpg" alt="" class="card-img">
+            <div class="swiper-preview swiper-button-prev">
+                <div class="material-icons">arrow_back</div>
+            </div>
+            <div class="swiper-next swiper-button-next">
+                <div class="material-icons">arrow_forward</div>
+            </div>
+        </div>
+        <div class="card-contents">
+            <h1 class="title">강원도의 사진들</h1>
+            <div class="card-container">
+                <div class="card">
+                    <div>
+                        <img src="./asset/beach-7142706.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="img-explanation">
+                        해가 떠오르는 동해 바닷가
+                    </div>
                 </div>
-                <div class="img-explanation">
-                    대관령 힘차게 돌아가는 풍차
+                <div class="card">
+                    <div>
+                        <img src="./asset/gangneung-2198026.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="img-explanation">
+                        차갑게 부딪히는 파도
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./asset/gangneung-4959752.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="img-explanation">
+                        대관령 힘차게 돌아가는 풍차
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./asset/the-snow-came-back-3523616.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="img-explanation">
+                        겨울날 아무도 없는 그네
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./asset/gangneung-7161884.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="img-explanation">
+                        출항을 준비하는 고깃배
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="./asset/lake-7142891.jpg" alt="" class="card-img">
+                    </div>
+                    <div class="img-explanation">
+                        한적한 강릉호
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div>
-                    <img src="./asset/the-snow-came-back-3523616.jpg" alt="" class="card-img">
+        </div>
+        <div class="user-contents">
+            <h1 class="title">강원도를 찾아준 사람들</h1>
+            <div class="user-card">
+                <div class="user-profile">
+                    <img src="asset/11539820.png" class="user-profile-img" />
+                    <span>
+                        강릉러버 ❤️
+                    </span>
                 </div>
-                <div class="img-explanation">
-                    겨울날 아무도 없는 그네
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="./asset/gangneung-7161884.jpg" alt="" class="card-img">
-                </div>
-                <div class="img-explanation">
-                    출항을 준비하는 고깃배
+                <div class="user-card-contents">
+                    너무너무 재밌었습니다. 다음에도 꼭 다시 오고 싶어요
                 </div>
             </div>
-            <div class="card">
-                <div>
-                    <img src="./asset/lake-7142891.jpg" alt="" class="card-img">
+
+            <div class="user-card">
+                <div class="user-profile">
+                    <img src="asset/11539820.png" class="user-profile-img" />
+                    <span>
+                        시인
+                    </span>
                 </div>
-                <div class="img-explanation">
-                    한적한 강릉호
+                <div class="user-card-contents">
+                    쏟아지는 금색빛 노을이 마치 어렸을 때 놀이터에서 놀다 집에 돌아가는 길을 연상시켰습니다 <br />
+                    언젠가 다시 추억을 떠올리고 싶을 때 다시 오고 싶습니다.
+                </div>
+            </div>
+
+            <div class="user-card">
+                <div class="user-profile">
+                    <img src="asset/11539820.png" class="user-profile-img" />
+                    <span>
+                        ENFP
+                    </span>
+                </div>
+                <div class="user-card-contents">
+                    즉흥적으로 떠난 여행이었지만 너무나도 즐거웠고 만족합니다!
+                </div>
+            </div>
+
+            <div class="user-card">
+                <div class="user-profile">
+                    <img src="asset/11539820.png" class="user-profile-img" />
+                    <span>
+                        여행 전문가
+                    </span>
+                </div>
+                <div class="user-card-contents">
+                    많은 곳을 돌아다녀봤지만 여기만큼 예쁜 곳을 못본 것 같아요!
                 </div>
             </div>
         </div>
