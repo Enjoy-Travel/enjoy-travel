@@ -22,14 +22,14 @@ main {
     max-width: 1200px;
     min-width: 600px;
     height: 1000px;
-    background-color: #f6f5f0;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1), 5px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .content-img-explanation {
     display: flex;
     max-width: 1160px;
     height: 250px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 20px 0px;
 }
 
@@ -46,7 +46,7 @@ main {
 }
 
 .explanation-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-decoration: none;
 }
 
