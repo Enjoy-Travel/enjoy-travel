@@ -11,8 +11,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
 </head>
 <style>
 </style>
@@ -88,16 +86,15 @@
 
   <!-- 메인 영역 -->
   <div class="main container">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide row" data-bs-ride="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide row">
       <div class="carousel-indicators col-6 d-flex carouselBar">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-
       <div class="carousel-inner col-6">
-        <div class="carousel-item back1 active">
+        <div class="carousel-item back1 active" data-bs-interval="10000">
           <span class="backTitle">
             <div>한국의 스위스</div>
             <span>이국적인 감상의 삼척 하이원추추파크</span>
@@ -108,7 +105,7 @@
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
-        <div class="carousel-item back2">
+        <div class="carousel-item back2" data-bs-interval="2000">
           <span class="backTitle">
             <div>2025 새해맞이</div>
             <span>새로운 나를 만나는 여행지 특집</span>
@@ -133,64 +130,6 @@
       </div>
     </div>
   </div>
-
-
-  <div class="container">
-    <h2 style="margin: 30px 0;">여행콕콕 | 빅데이터 기반 AI추천 여행지 및 코스튬 알려드려요.</h2>
-    <div class="contentGroup">
-      <div class="tab1"></div>
-      <div class="content1">
-        <ul class="d-flex p-1" style="width: 100%;">
-          <li style="width: 100%;">
-            <div>
-              <a href="#">
-                <div><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=5466d167-ffcf-492c-a039-268d6fcac139&mode=progress" alt=""></div>
-                <strong>장회나루</strong>
-                <span>충청북도 단양군</span>
-              </a>
-              <button></button>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a href="#">
-                <div><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=d05cdca4-248f-4a14-9934-9e5cf84d6bcb&mode=progress" alt=""></div>
-                <strong>라제통문</strong>
-                <span>전북특별자치도 무주군</span>
-              </a>
-              <button></button>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a href="#">
-                <div><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=5731ff3b-7013-4e06-b19b-664d4a1b0ae1&mode=progress" alt=""></div>
-                <strong>(주)마치공작소</strong>
-                <span>충청북도 충주시</span>
-              </a>
-              <button></button>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <a href="#">
-                <div><img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=886b779f-64fc-4d46-8016-6c2b71091690&mode=progress" alt=""></div>
-                <strong>아쿠아플라넷 여수</strong>
-                <span>전라남도 여수시</span>
-              </a>
-              <button></button>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
 
   <div class="midContent d-flex container">
     <div class="d-flex midContentImg">
@@ -222,9 +161,9 @@
 
   <div class="bottomCentent">
     <div class="container">
-      <h4 style="padding: 20px 0; font-weight: bolder;">함께 떠나는 힐링 여행</h4>
+      <h4 style="padding: 20px 0; font-weight: bolder;">함께떠나는 힐링 여행</h4>
       <div class="card-group">
-        <div class="card pt-2">
+        <div class="card">
           <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f221b09a-caf6-4470-ac0e-aab51f1399d6"
             class="card-img-top cardImg" alt="...">
           <div class="card-body cardP">
@@ -232,7 +171,7 @@
             <div class="text-center">강릉 두부디저트 맛집</div>
           </div>
         </div>
-        <div class="card pt-2">
+        <div class="card">
           <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=53e9573e-c9bb-48e0-a096-4e9873acc732"
             class="card-img-top cardImg" alt="...">
           <div class="card-body cardP">
@@ -240,7 +179,7 @@
             <div class="text-center">요즘 여행, 로컬체험 강원편</div>
           </div>
         </div>
-        <div class="card pt-2">
+        <div class="card">
           <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f73c7237-835e-4159-99e4-11c83502c120"
             class="card-img-top cardImg" alt="...">
           <div class="card-body cardP">
@@ -248,7 +187,7 @@
             <div class="text-center">국물 요리 맛집 추천</div>
           </div>
         </div>
-        <div class="card pt-2">
+        <div class="card">
           <img src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f221b09a-caf6-4470-ac0e-aab51f1399d6"
             class="card-img-top cardImg" alt="...">
           <div class="card-body cardP">
@@ -364,9 +303,6 @@
       </div>
     </div>
   </div>
-
-
-  <script src="./script.js"></script>
 </body>
 
 </html>
