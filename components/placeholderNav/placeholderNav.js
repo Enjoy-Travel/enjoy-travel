@@ -1,7 +1,7 @@
 const regions = [
   {
     name: "전국",
-    link: ["/NationWide/NationWide.html", "/NationWide/NationWideRes.html"],
+    link: ["/nationwide/nationwide", "/nationwide/nationwideres"],
     img: "https://cdn-icons-png.flaticon.com/256/4498/4498474.png",
   },
   {
@@ -16,7 +16,7 @@ const regions = [
   },
   {
     name: "강원",
-    link: ["url.html"],
+    link: ["/gangneung/gangneung.html"],
     img: "/images/local/gyeonggi.jpg",
   },
   {
@@ -51,7 +51,7 @@ const regions = [
   },
   {
     name: "제주",
-    link: ["/components/placeholderNav/placeholderNav.html"],
+    link: ["/components/placeholdernav/placeholdernav"],
     img: "/images/local/jeju.jpg",
   },
 ];
