@@ -8,10 +8,14 @@
   list-style: none;
 }
 
-/* body {
-  padding-top: 100px;
-} */
+body::-webkit-scrollbar {
+  width: 8px;
+}
 
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#9796f0, #fbc7d4);
+  border-radius: 12px;
+}
 .me-free {
   margin-right: 50px;
 }

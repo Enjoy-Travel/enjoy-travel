@@ -20,6 +20,23 @@
   font-weight: 550;
 }
 
+@media (max-width: 1199px) {
+  .navList a {
+    font-size: 0.6rem;
+  }
+
+  .navLink2 {
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    font-weight: 550;
+  }
+
+  .navbar-brand2 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  }
+}
+
 /* .header_container {
   position: fixed;
   background-color: white;
