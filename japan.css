@@ -1,130 +1,139 @@
-.me-free {
-    margin-right: 50px;
-  }
-  
-  .navLink2 {
-    font-size: clamp(1rem, 1.4vw, 1.5rem);
-    font-weight: 550;
-  }
-  
-  .navList a {
-    text-decoration: none;
-    color: black;
-    font-size: 0.8rem;
-  }
-  
-  .navbar-brand2 {
-    font-style: italic;
-    font-weight: bolder;
-    font-size: 1.8vw;
-    text-decoration: none;
-  }
-  
-  .footerContent {
-    background-color: rgb(236, 236, 236);
-    height: auto;
-    padding-bottom: 20px;
-  }
-  
-  .fContent {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-    font-size: clamp(0.7rem, 1.5vw, 2rem);
-  }
-  
-  .btCListBox {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .btCList {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .btCList img {
-    width: clamp(2vw, 3vw, 4vw);
-    height: clamp(2vw, 3vw, 4vw);
-    border-radius: 25px;
-  }
-  
-  .btCList span {
-    margin: 0 10px 0 5px;
-    font-size: clamp(0.5rem, 1vw, 2vw);
-  }
-  
-  .btNav {
-    display: flex;
-    justify-content: center;
-    font-size: 0.7rem;
-  }
-  
-  .footerIf {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .footerIf img {
-    width: clamp(4rem, 9vw, 10rem);
-    height: auto;
-    padding: 10px;
-  }
-  
-  .region {
-    border-bottom: 0.5px solid rgb(189, 189, 189);
-    border-top: 0.5px solid rgb(189, 189, 189);
-    padding: 10px 0;
-  }
-  
-  .regionList {
-    font-size: clamp(0.75rem, 1.1vw, 1.5vw);
-    font-weight: bolder;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    white-space: none;
-    max-width: 90%;
-  }
-  
-  .test a:hover {
-    color: aquamarine;
-    font-weight: bolder;
-  }
-  
-  .nav-item a:hover {
-    color: rgb(102, 187, 159);
-  }
-  
-  .navbarButton {
-    margin-right: -30px;
-    padding: 0px;
-  }
-  
-  .btIfor {
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: clamp(8px, 1vw, 5rem);
-  }
-  
-  .btIfor a {
-    text-decoration: none;
-    color: rgb(109, 106, 106);
-    padding: 2px 5px;
-  }
-  
-  .btIfor a:hover {
-    color: rgb(23, 50, 202);
-  }
-  
-  .firstBtIfor {
-    margin-bottom: 10px;
-  }
+*{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  list-style: none;
+}
 
- 
+.me-free {
+  margin-right: 50px;
+}
+
+.navLink2 {
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
+  font-weight: 550;
+}
+
+.navList a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.navbar-brand2 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.8vw;
+  text-decoration: none;
+}
+
+.footerContent {
+  background-color: rgb(236, 236, 236);
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.fContent {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: clamp(0.7rem, 1.5vw, 2rem);
+}
+
+.btCListBox {
+  display: flex;
+  justify-content: center;
+}
+
+.btCList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btCList img {
+  width: clamp(2vw, 3vw, 4vw);
+  height: clamp(2vw, 3vw, 4vw);
+  border-radius: 25px;
+}
+
+.btCList span {
+  margin: 0 10px 0 5px;
+  font-size: clamp(0.5rem, 1vw, 2vw);
+}
+
+.btNav {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+.footerIf {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footerIf img {
+  width: clamp(4rem, 9vw, 10rem);
+  height: auto;
+  padding: 10px;
+}
+
+.region {
+  border-bottom: 0.5px solid rgb(189, 189, 189);
+  border-top: 0.5px solid rgb(189, 189, 189);
+  padding: 10px 0;
+}
+
+.regionList {
+  font-size: clamp(0.75rem, 1.1vw, 1.5vw);
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  white-space: none;
+  max-width: 90%;
+}
+
+.regionList a {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+}
+
+.test a:hover {
+  color: aquamarine;
+  font-weight: bolder;
+}
+
+.nav-item a:hover {
+  color: rgb(102, 187, 159);
+}
+
+.navbarButton {
+  margin-right: -30px;
+  padding: 0px;
+}
+
+.btIfor {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(8px, 1vw, 5rem);
+}
+
+.btIfor a {
+  text-decoration: none;
+  color: rgb(109, 106, 106);
+  padding: 2px 5px;
+}
+
+.btIfor a:hover {
+  color: rgb(23, 50, 202);
+}
+
+.firstBtIfor {
+  margin-bottom: 10px;
+}
+
 
 
 
@@ -138,6 +147,8 @@
     margin-left: auto;
     
 }
+
+
 
 .first-img {
     width: 100vw;
@@ -154,7 +165,11 @@
 
 .card{
     color:black;
+    text-align:center;
+    
 }
+
+
 
 
 
@@ -201,10 +216,259 @@
     margin-top: 50px;
 }
 
+.fw{
+    font-family:'Pretendard-Regular';
+    font-weight:400;
+    font-size:2rem;
+    font-style: normal;
+    
+}
+
+.FTZwa blockquote {
+    margin: 2rem 0px;
+    border-left: 4px solid var(--primary2);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: var(--bg-element2);
+    padding: 1rem 1rem 1rem 2rem;
+    color: var(--text1);
+}
+
+.blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
+.card-img-top{
+    width: 100%;
+}
+
+
+.btn-site{
+    color:blue;
+    background-color: white;
+}
+
+
+
+
+
+.p-ttl-2__en {
+    
+    color: #eca13b;
+    font-size: 1em;
+}
+
+.p-ttl-2 {
+    
+    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    
+    flex-direction: column;
+    -webkit-box-align: center;
+    
+    align-items: center;
+    padding-bottom: 0.9em;
+    margin-bottom: 1.2em;
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+.p-tt {
+    margin-top: 0em; 
+    margin-bottom: 1em;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.p-ttl-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-top: 2em;
+    font-size: 1.6rem;
+}
+
+
+*, *::before, *::after {
+    
+    box-sizing: border-box;
+}
+
+.p-ttl-2::before {
+    width: 2em;
+    height: 2px;
+    background: currentColor;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.post-detail-page {
+
+    
+    color: #0071ab;
+    font-weight:600;
+    font-size:2rem;
+    line-height: 1.4;
+    margin-top: 30px;
+    
+}
+
+.post-detail-pagesecond {
+    
+    font-weight:600;
+    font-size:2rem;
+    
+    line-height: 1.4;
+}
+
+.post-detail-pagefifth {
+  
+    color: #0071ab;
+    font-weight:600;
+    font-size:2rem;
+    line-height: 1.4;
+    margin-top: 30px;
+    padding-left: 150px;
+}
+
+.post-detail-pagesixth {
+    padding-left: 150px;
+    font-weight:600;
+    font-size:2rem;
+    
+    line-height: 1.4;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+.footer-links{
+    float: right;
+    margin-right:60px;
+}
+
+메인 부분
+
+
+코스모월드 부분
+
+.ttlH2 {
+    border-bottom: 2px dotted #999;
+    
+    
+}
+
+.ttlH2 {
+    margin-bottom: 15px;
+    margin:300px;
+    
+}
+
+
+
+.ttlH3 {
+    margin:0 300px;
+   
+}
+.ttlH4 {
+    margin:200px;
+   
+}
+
+.p-ttl:first-child, .p-ttl + .p-ttl {
+    margin-top: 0;
+}
+
+.p-ttl-3_border {
+    padding: 0.1em 0 0.1em 0.5em;
+    margin-top: 1em;
+    margin-left:100px;
+    border-left: 4px solid #2893cf;
+    
+}
+
+.p-ttl-4_border {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    
+    
+}
+
+.p-ttl-5_border {
+    padding: 0.1em 0 0.1em 0.5em;
+    margin:100px;
+    border-left: 4px solid #2893cf;
+    
+    
+}
+
+.p-ttl-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    font-size: 1.8rem;
+}
+
+.p-ttl {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    line-height: 1.3;
+    
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.first-img {
+    width: 80vw;
+}
+
+.second-img{
+    padding-right: 70px;
+}
+.cw{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
 @media (max-width: 1199px) {
     .navList a {
       font-size: 0.6rem;
     }
+    
   
     .navLink2 {
       font-size: clamp(1rem, 1vw, 1.2rem);
@@ -229,6 +493,132 @@
         display:block;
     }
 
+   
+
 }
 
+@media (max-width: 48rem){
+    .p-ttl{
+        margin-top: 1em;
+        font-size: 15px;
+        width: 100%;   
+           
+    }
 
+    .post-detail-page {
+        color: #0071ab;
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1.4;
+       
+        
+        display: block;
+    }
+
+    .fw {
+     text-align: left;
+     
+    }
+
+    
+    
+    .footer-links{        
+      display: none;
+    }
+
+
+
+
+  
+    .p-ttl-3_border {
+        padding: 0.1em 0 0.1em 0.5em;
+        border-left: 4px solid #2893cf;
+        text-align:left;
+        font-size: 15px;
+        width: 100%;  
+        margin-left: 50px;
+    }
+
+    .h5{
+        text-align:left;
+        font-size: 15px;
+        width: 100%; 
+    }
+    
+    .p-ttl-4_border{
+        width:100%;
+        display:block;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size:15px;
+        margin-bottom: 40px;
+    }
+    
+
+    .post-detail-page{
+        color: #0071ab;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.4;
+        padding-top: 1px;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        width:100%;
+        
+    }
+
+    .post-detail-pagesecond {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.4;
+        text-align: center;
+        width:100%;
+        
+    }
+
+    .post-detail-pagethird{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    width:100%;
+
+    }
+
+
+    .post-detail-pagefifth{
+        color: #0071ab;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.4;
+        padding-top: 1px;
+        text-align: center;
+        padding-right: 140px;
+        width:100%;
+        display: block;
+    }
+
+    .post-detail-pagesixth {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.4;
+        text-align: center;
+        padding-right: 140px;
+        width:100%;
+        display: block;
+    }
+
+    .p-ttl-5_border {
+        padding: 0.1em 0 0.1em 0.5em;
+        margin-left: 50px;
+        border-left: 4px solid #2893cf;
+    }
+
+    .post-detail-pagethird {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.4;
+        text-align: center;
+    }
+}
