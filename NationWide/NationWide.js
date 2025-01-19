@@ -154,33 +154,27 @@ const placeCard = () => {
 
   cards.forEach((item, i) => {
     cardSection.innerHTML += `
-      <div class="card">
-        <img src="${item.img}" alt="" />
-
-        <button
-          class="card_likes"
-          id="content_place${i}"
-          onclick="toggleLike(${i})"
-        >
-          <i class="fa-solid fa-heart"></i>
-        </button>
-
-        <div class="card_text">
-          <div>
-            <h3>${item.title}</h3>
-            <p>${item.area}</p>
+            <div class="card">
+            <img
+              src="${item.img}"
+              alt=""
+            />
+            <button class="card_likes"  id="content_res${i}" onclick="toggleLike(${i})">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+  
+            <div class="card_text">
+              <div>
+                <h3>${item.title}</h3>
+                <p>${item.area}</p>
+              </div>
+            <div > 
+            ${item.hashtags.map((tag) => `<span>#${tag}</span>`).join("")}</div>
+            </div>
+             <a href="${
+               item.detail
+             }" ><i class="fa-solid fa-arrow-right"></i></a>
           </div>
-
-          <div>
-            ${item.hashtags.map((tag) => <span>#${tag}</span>).join("")}
-          </div>
-        </div>
-        <a
-          href="${item.detail}"
-        >
-          <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
     `;
 
     const isLiked = localStorage.getItem(`content_place${i}`);
